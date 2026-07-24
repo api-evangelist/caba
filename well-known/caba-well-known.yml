@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: searched
+source: live probe of https://cabadesign.co/.well-known/*
+host: https://cabadesign.co
+note: >-
+  The storefront runs on Shopify; the OIDC/OAuth discovery documents describe
+  Shopify's customer-accounts identity provider (issuer
+  shopify.com/authentication/62685773958), served from the store's own
+  /.well-known/ surface. No first-party developer/API well-known documents are
+  published by Caba.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: caba-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: caba-oauth-authorization-server.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404

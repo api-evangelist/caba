@@ -1,8 +1,16 @@
 aid: caba
 name: Caba
-description: 'Caba is a company surfaced as a portfolio company of homebrew and added to the API Evangelist
-  network as a stub for enrichment. Sector: logistics. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  CABA Design Co. is a direct-to-consumer home-furnishings company building the
+  next generation of furniture brands powered by community and technology. It
+  develops sustainable, high-quality furniture and gives customers choice
+  through customization and modularity, selling directly through its
+  Shopify-hosted storefront at cabadesign.co under the tagline "Your Home. Your
+  Way." Caba was surfaced as a portfolio lead and added to the API Evangelist
+  network as a company stub; it publishes a consumer e-commerce storefront and
+  does not currently expose a first-party developer API, SDK, or developer
+  portal. This profile captures the identity, storefront, and domain/security
+  posture verified during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/caba/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +18,30 @@ x-backed-by:
 - homebrew
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://cabadesign.co/cdn/shop/files/caba_hp_bnr01_v2_eb793e85-597c-4c83-8981-767090f44371.jpg?v=1752698436
 tags:
 - Company
-- Logistics
+- Furniture
+- Home Goods
+- Home Furnishings
+- Direct-to-Consumer
+- E-commerce
+- Consumer Products
+- Design
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/caba-domain-security.yml
+- type: WellKnown
+  url: well-known/caba-well-known.yml
 - type: Website
   url: https://www.cabadesign.co
+- type: PrivacyPolicy
+  url: https://cabadesign.co/policies/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
